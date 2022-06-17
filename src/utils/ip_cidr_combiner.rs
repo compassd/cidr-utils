@@ -6,7 +6,7 @@ use crate::num_bigint::BigUint;
 use crate::utils::{Ipv4CidrCombiner, Ipv6CidrCombiner};
 
 /// To combine multiple IPv4 CIDRs and IPv6 CIDRs to supernetworks.
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct IpCidrCombiner {
     ipv4: Ipv4CidrCombiner,
     ipv6: Ipv6CidrCombiner,

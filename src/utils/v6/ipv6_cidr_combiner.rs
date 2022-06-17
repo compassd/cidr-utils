@@ -7,7 +7,7 @@ use crate::num_bigint::BigUint;
 use num_traits::Zero;
 
 /// To combine multiple IPv6 CIDRs to supernetworks.
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Ipv6CidrCombiner {
     cidr_array: Vec<Ipv6Cidr>,
 }

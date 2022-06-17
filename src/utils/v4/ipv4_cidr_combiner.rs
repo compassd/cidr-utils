@@ -4,7 +4,7 @@ use std::ops::Deref;
 use crate::cidr::{Ipv4Able, Ipv4Cidr};
 
 /// To combine multiple IPv4 CIDRs to supernetworks.
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Ipv4CidrCombiner {
     cidr_array: Vec<Ipv4Cidr>,
 }
